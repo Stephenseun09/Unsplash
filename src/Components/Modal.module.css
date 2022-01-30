@@ -1,0 +1,67 @@
+:root{
+  --backdrop: rgba(0, 0, 0, 0.75);
+  --close: rgba(255, 255, 255, 0.726);
+  --white: #fff;
+  --username: #132433;
+  --userlocation: #b4b6b8;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: var(--backdrop);
+}
+.close {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 4px;
+  position: fixed;
+  top: -25px;
+  right: -38px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.close i{
+  color: var(--close);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 70vh;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.modal img {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.modal .image_caption {
+  background-color: var(--white);
+  padding: 0.8rem 1rem;
+  border-radius: 0 0 10px 10px;
+}
+.modal .user_name {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--username);
+
+}
+.modal .user_location {
+  font-size: 12px;
+  color: var(--userlocation);
+}

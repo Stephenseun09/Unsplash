@@ -1,0 +1,120 @@
+.gallery {
+  margin: auto;
+  -webkit-margin-before: -1.3rem;
+          margin-block-start: -1.3rem;
+  width: 68%;
+  -webkit-column-gap: 0.7%;
+          column-gap: 0.7%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 16px;
+}
+
+.gallery .container {
+  overflow: hidden;
+  border-radius: 12px;
+  height: 330px;
+  position: relative;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-animation: loading-skeleton 1s linear infinite alternate;
+          animation: loading-skeleton 1s linear infinite alternate;
+}
+
+.gallery .container:nth-of-type(1) {
+  grid-column: span 4;
+}
+
+.gallery .container:nth-of-type(2) {
+  grid-column: span 4;
+  grid-row: span 2;
+  height: 420px;
+}
+
+.gallery .container:nth-of-type(3) {
+  grid-column: span 4;
+}
+
+.gallery .container:nth-of-type(4) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container:nth-of-type(5) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container:nth-of-type(6) {
+  grid-column: span 4;
+  grid-row: span 2;
+  height: 420px;
+}
+
+.gallery .container:nth-of-type(7) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container:nth-of-type(8) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container .image-username {
+  width: 60%;
+  height: 18px;
+  position: absolute;
+  left: 22px;
+  bottom: 48px;
+  z-index: 10;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-animation: loading-skeleton 1s linear infinite alternate;
+          animation: loading-skeleton 1s linear infinite alternate;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.gallery .container .image-userlocation {
+  width: 70%;
+  height: 18px;
+  position: absolute;
+  left: 22px;
+  bottom: 25px;
+  z-index: 10;
+  -webkit-animation: loading-skeleton 1s linear infinite alternate;
+          animation: loading-skeleton 1s linear infinite alternate;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+@-webkit-keyframes loading-skeleton {
+  0% {
+    background-color: #a3b8c2;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
+
+@keyframes loading-skeleton {
+  0% {
+    background-color: #a3b8c2;
+  }
+  100% {
+    background-color: #f0f3f5;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .gallery {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
+        grid-template-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
+  }
+}
+/*# sourceMappingURL=Skeleton.css.map */

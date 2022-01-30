@@ -1,0 +1,36 @@
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
+  margin: auto;
+  padding-left: 10px;
+  border-radius: 12px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 12px 0 rgba(58, 71, 73, 0.075);
+          box-shadow: 0 0 12px 0 rgba(58, 71, 73, 0.075);
+}
+
+i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.151);
+}
+
+input {
+  width: 100%;
+  border-radius: 12px;
+  padding: 1rem;
+  border: none;
+}
+
+input:focus {
+  border: none !important;
+  outline: none;
+}
+/*# sourceMappingURL=Input.css.map */
