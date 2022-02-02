@@ -67,7 +67,6 @@ function App() {
           loading={loading}
           enteredValue={enteredValue}
           onChange={debouncedSearchHandler}
-          // fsho
         />
 
         {/* --------------GALLERY------------ */}
