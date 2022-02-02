@@ -22,7 +22,7 @@ function App() {
   const [searched, setSearched] = useState(false);
 
   // ----------ACCESKEY------------
-  const accessKey = process.env.REACT_APP_ACCESSKEY;
+  const accessKey = "tLEJrCCT5Qs8eKxelq3xDrwKmzrAvqDpQd13IUOFNO4";
 
   // ----------SEARCH----------
   const searchHandler = (event) => {
