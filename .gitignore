@@ -3,8 +3,6 @@
 /.pnp
 .pnp.js
 
-# access key
-.env
 
 # testing
 /coverage
