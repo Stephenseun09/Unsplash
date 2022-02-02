@@ -1,0 +1,17 @@
+/* ----Header---- */
+.header {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #dde2e9;
+}
+h2 {
+  width: 75%;
+  margin: auto;
+  margin-block-start: 1rem;
+  color: #253544ce;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+h2 span {
+  color: #b4b6b8;
+}

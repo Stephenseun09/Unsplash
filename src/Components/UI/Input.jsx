@@ -1,5 +1,5 @@
 import React from "react";
-import './Input.css'
+import "./Input.css";
 
 const Input = (props) => {
   return (
@@ -8,9 +8,9 @@ const Input = (props) => {
       <input
         type={props.type}
         name={props.name}
-        aria-label={props['arial-label']}
+        aria-label={props["arial-label"]}
         placeholder={props.placeholder}
-        onKeyDown={props.onKeyDown}
+        onChange={props.onChange}
       />
     </div>
   );

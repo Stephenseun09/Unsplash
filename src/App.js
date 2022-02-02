@@ -8,6 +8,7 @@ import Modal from "./Components/Modal";
 import "./App.css";
 import Input from "./Components/UI/Input";
 import Skeleton from "./Components/UI/Skeleton";
+import Header from "./Components/Header";
 
 function App() {
   // -----------USE STATE-----------
@@ -62,26 +63,12 @@ function App() {
   } else {
     return (
       <div className="App">
-        <div className="header">
-          {searched && !loading && (
-            <h2>
-              Search Results for <span>"{enteredValue}"</span>
-            </h2>
-          )}
-
-          {searched && loading && (
-            <h2>
-              Searching for <span>"{enteredValue}"</span>
-            </h2>
-          )}
-          {!searched && <Input
-            type="search"
-            name="name"
-            aria-label="search box"
-            placeholder="Search for photo"
-            onKeyDown={debouncedSearchHandler}
-          />}
-        </div>
+        <Header
+          searched={searched}
+          loading={loading}
+          enteredValue={enteredValue}
+          onChange={debouncedSearchHandler}
+        />
 
         {/* --------------GALLERY------------ */}
         {loading && <Skeleton />}
