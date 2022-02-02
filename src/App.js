@@ -6,7 +6,6 @@ import Cards from "./Components/Cards";
 import Modal from "./Components/Modal";
 
 import "./App.css";
-import Input from "./Components/UI/Input";
 import Skeleton from "./Components/UI/Skeleton";
 import Header from "./Components/Header";
 
@@ -68,6 +67,7 @@ function App() {
           loading={loading}
           enteredValue={enteredValue}
           onChange={debouncedSearchHandler}
+          // fsho
         />
 
         {/* --------------GALLERY------------ */}
