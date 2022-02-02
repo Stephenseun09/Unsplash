@@ -4,10 +4,10 @@ import debounce from "lodash.debounce";
 
 import Cards from "./Components/Cards";
 import Modal from "./Components/Modal";
-
-import "./App.css";
 import Skeleton from "./Components/UI/Skeleton";
 import Header from "./Components/Header";
+
+import "./App.css";
 
 function App() {
   // -----------USE STATE-----------
@@ -22,7 +22,7 @@ function App() {
   const [searched, setSearched] = useState(false);
 
   // ----------ACCESKEY------------
-  const accessKey = "tLEJrCCT5Qs8eKxelq3xDrwKmzrAvqDpQd13IUOFNO4";
+  const accessKey = process.env.REACT_APP_ACCESSKEY;
 
   // ----------SEARCH----------
   const searchHandler = (event) => {
