@@ -101,6 +101,38 @@
   grid-row: span 2;
 }
 
+.gallery .container:nth-of-type(9) {
+  grid-column: span 4;
+  grid-row: span 2;
+  height: 420px;
+}
+
+.gallery .container:nth-of-type(10) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container:nth-of-type(11) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container:nth-of-type(12) {
+  grid-column: span 4;
+  grid-row: span 2;
+  height: 420px;
+}
+
+.gallery .container:nth-of-type(13) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.gallery .container:nth-of-type(14) {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
 .gallery .container img {
   display: block;
   width: 100%;
@@ -144,17 +176,17 @@
   .gallery {
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-    -ms-grid-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
-        grid-template-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
+    -ms-grid-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr 0.6fr 0.2fr 0.8fr 0.2fr;
+        grid-template-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr 0.6fr 0.2fr 0.8fr 0.2fr;
   }
 }
 
 @media only screen and (max-width: 799px) {
   .gallery {
-    width: 85%;
+    width: 88%;
   }
   .gallery .container {
-    height: 350px;
+    height: 380px;
   }
 }
 /*# sourceMappingURL=Cards.css.map */

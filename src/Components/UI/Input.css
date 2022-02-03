@@ -35,7 +35,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 799px) {
-  .input {
+  .search {
     width: 85%;
   }
 }

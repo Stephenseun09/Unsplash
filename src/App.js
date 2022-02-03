@@ -38,7 +38,7 @@ function App() {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://api.unsplash.com/photos/random?client_id=${accessKey}&w=1500&dpr=2&query=${enteredValue}&count=8`
+          `https://api.unsplash.com/photos/random?client_id=${accessKey}&w=1500&dpr=2&query=${enteredValue}&count=14`
         );
         setItems(response.data);
       } catch (error) {
