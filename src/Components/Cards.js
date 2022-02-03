@@ -20,7 +20,7 @@ const Cards = (props) => {
           key={item.id}
           className="container"
         >
-          <img src={item.urls.regular} alt="" />
+          <img src={item.urls.regular} alt="" loading="lazy" />
           <div className="underlay"></div>
           <div className="image-caption">
             <p className="user-name">{item.user.name}</p>
