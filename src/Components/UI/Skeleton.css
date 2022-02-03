@@ -74,8 +74,8 @@
   transition: 0.5s ease;
   -webkit-animation: loading-skeleton 1s linear infinite alternate;
           animation: loading-skeleton 1s linear infinite alternate;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .gallery .container .image-userlocation {
@@ -87,8 +87,8 @@
   z-index: 10;
   -webkit-animation: loading-skeleton 1s linear infinite alternate;
           animation: loading-skeleton 1s linear infinite alternate;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 @-webkit-keyframes loading-skeleton {
@@ -115,6 +115,15 @@
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
         grid-template-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .gallery {
+    width: 85%;
+  }
+  .gallery .container {
+    height: 350px;
   }
 }
 /*# sourceMappingURL=Skeleton.css.map */

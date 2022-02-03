@@ -33,4 +33,10 @@ input:focus {
   border: none !important;
   outline: none;
 }
+
+@media only screen and (max-width: 799px) {
+  .input {
+    width: 85%;
+  }
+}
 /*# sourceMappingURL=Input.css.map */

@@ -62,7 +62,7 @@
       z-index: 10;
       transition: 0.5s ease;
       animation: loading-skeleton 1s linear infinite alternate;
-      animation-delay: .5s;
+      animation-delay: 0.5s;
     }
     .image-userlocation {
       width: 70%;
@@ -72,7 +72,7 @@
       bottom: 25px;
       z-index: 10;
       animation: loading-skeleton 1s linear infinite alternate;
-      animation-delay: .5s;
+      animation-delay: 0.5s;
     }
   }
 }
@@ -90,5 +90,13 @@
   .gallery {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 0.8fr 0.2fr 0.6fr 0.4fr 0.4fr;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .gallery {
+    width: 85%;
+    .container {
+      height: 350px;
+    }
   }
 }

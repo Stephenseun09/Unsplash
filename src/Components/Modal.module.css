@@ -1,5 +1,5 @@
-:root{
-  --backdrop: rgba(0, 0, 0, 0.75);
+:root {
+  --backdrop: rgba(0, 0, 0, 0.822);
   --close: rgba(255, 255, 255, 0.726);
   --white: #fff;
   --username: #132433;
@@ -14,6 +14,7 @@
   height: 100vh;
   z-index: 10;
   background: var(--backdrop);
+  backdrop-filter: blur(50px);
 }
 .close {
   font-size: 12px;
@@ -21,13 +22,13 @@
   padding: 2px 5px;
   border-radius: 4px;
   position: fixed;
-  top: -25px;
-  right: -38px;
+  top: -40px;
+  right: -6px;
   z-index: 200;
   cursor: pointer;
 }
 
-.close i{
+.close i {
   color: var(--close);
 }
 
@@ -38,15 +39,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-height: 70vh;
   z-index: 100;
   border-radius: 10px;
 }
 
 .modal img {
   display: block;
-  width: 100%;
-  max-height: 70vh;
+  width: 85vw;
+  max-height: 75vh;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
@@ -59,7 +59,6 @@
   font-size: 15px;
   font-weight: bold;
   color: var(--username);
-
 }
 .modal .user_location {
   font-size: 12px;
