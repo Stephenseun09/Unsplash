@@ -40,7 +40,6 @@ function App() {
         const response = await axios.get(
           `https://api.unsplash.com/photos/random?client_id=${accessKey}&w=1500&dpr=2&query=${enteredValue}&count=8`
         );
-        console.log(response);
         setItems(response.data);
       } catch (error) {
         setError(error);
